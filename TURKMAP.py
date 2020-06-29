@@ -33,15 +33,15 @@ elif(islem=="2"):
 	hedefip = raw_input("Hedef İp Girin: ")
 	os.system("nmap -sS -sV " + hedefip)
 elif(islem=="3"):
-        os.system("figlet İsletim System İnfo ")
+        os.system("figlet Isletim System Info ")
 	hedefip = raw_input("Hedef İp Girin: ")
 	os.system("nmap -O " + hedefip)
 elif(islem == "4"):
-        os.system("figlet Gizli Tarama T")
+        os.system("figlet Gizli Tarama ")
         hedefip = raw_input("Hedef İp Girin:")
         os.system("nmap --spoof-mac 0 -D 31.31.31.31 " + hedefip)
 elif(islem == "5"):
-        os.system("figlet Seytan Ayrintida.. ;) T")
+        os.system("figlet Seytan Ayrintida.. ;) ")
         hedefip == raw_input("Hedef İp Girin:")
         os.system("nmap -vvv -T1 -p- " + hedefip) 
 
