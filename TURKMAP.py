@@ -18,31 +18,36 @@ TÜRK MAP Programına Hoş Geldiniz.
 6) açık taraması (ayrıntılı)
 
 
-DİPNOT:nmap ta port taramasının kısayol versiyonu ;)
+DİPNOT:nmap ta port taramasının kısayol versiyonu ;) TryHackMe vb.. 'de başarılar .D
 """)
 
 islem = raw_input("İşlem Numarasını Girin: ")
 
 
 if(islem=="1"):
+        os.system("figlet Hizli Tarama")
 	hedefip = raw_input("Hedef İp Girin: ")
 	os.system("nmap " + hedefip)
 elif(islem=="2"):
+        os.system("figlet Servis Versiyon ")
 	hedefip = raw_input("Hedef İp Girin: ")
 	os.system("nmap -sS -sV " + hedefip)
 elif(islem=="3"):
+        os.system("figlet İsletim System İnfo ")
 	hedefip = raw_input("Hedef İp Girin: ")
 	os.system("nmap -O " + hedefip)
 elif(islem == "4"):
+        os.system("figlet Gizli Tarama T")
         hedefip = raw_input("Hedef İp Girin:")
         os.system("nmap --spoof-mac 0 -D 31.31.31.31 " + hedefip)
 elif(islem == "5"):
+        os.system("figlet Seytan Ayrintida.. ;) T")
         hedefip == raw_input("Hedef İp Girin:")
         os.system("nmap -vvv -T1 -p- " + hedefip) 
 
 
 elif(islem == "6"):
-         secenek = raw_input("açık taramasaı yapılırken ip ve mac gizlensinmi? Y/H :")
+         secenek = raw_input("açık taraması yapılırken ip ve mac gizlensinmi? Y/H :")
          if(secenek == "H" or secenek == "h"):
         
             os.system("clear")
@@ -62,27 +67,35 @@ elif(islem == "6"):
             print("-------------------------------")
             deger = raw_input("Değeri giriniz:")
             if(deger == "1"):
+                os.system("figlet ftp ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=ftp-brute " + hedefip) 
             elif(deger == "2"):
+                os.system("figlet smtp ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=smtp-brute " +  hedefip) 
             elif(deger == "3"):
+                os.system("figlet telnet")     
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=telnet-brute " + hedefip) 
             elif(deger == "4"):
+                os.system("figlet HTTP ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=http-brute " + hedefip) 
             elif(deger == "5"):
+                os.system("figlet POP3 ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=pop3-brute " + hedefip) 
             elif(deger == "6"):
+                os.system("figlet SMB ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=smb-brute " + hedefip) 
             elif(deger == "7"):
+                os.system("figlet mysql ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap -vv --script vuln --script=mysql-brute " + hedefip) 
             elif(deger == "8"):
+                os.system("figlet ALL SERVİCE ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("figlet ftp")
                 print("---------------------------------------------------------")
@@ -126,28 +139,36 @@ elif(islem == "6"):
             print("------------------------------")
             deger = raw_input("Değeri giriniz:")
             if(deger == "1"):
+                os.system("figlet ftp ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31 -vv --script vuln --script=ftp-brute " + hedefip) 
             elif(deger == "2"):
+                os.system("figlet smtp ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=smtp-brute " +  hedefip) 
             elif(deger == "3"):
+                os.system("figlet telnet ")   
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=telnet-brute " + hedefip) 
             elif(deger == "4"):
+                os.system("figlet HTTP ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=http-brute " + hedefip) 
             elif(deger == "5"):
+                os.system("figlet POP3 ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=pop3-brute " + hedefip) 
             elif(deger == "6"):
+                os.system("figlet SMB ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=smb-brute " + hedefip) 
           
             elif(deger == "7"):
+                os.system("figlet mysql ")   
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("nmap --spoof-mac 0 -D 31.31.31.31  -vv --script vuln --script=mysql-brute " + hedefip) 
             elif(deger == "8"):
+                os.system("figlet ALL service ")
                 hedefip = raw_input("Hedef İp Girin:")
                 os.system("clear")
                 os.system("figlet TARAMA BASLIYOR")
@@ -184,4 +205,5 @@ elif(islem == "6"):
 
 
 else:
-	print("Hatalı Seçim Yaptınız. Program Kapatılıyor.")
+	print("Hatalı Seçim Yaptınız. THE END.")
+
