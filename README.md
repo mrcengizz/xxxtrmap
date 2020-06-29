@@ -1,0 +1,2 @@
+# TURKMAP
+Nmap kısayol versiyonu
