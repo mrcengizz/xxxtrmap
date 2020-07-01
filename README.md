@@ -1,7 +1,8 @@
 # TURKMAP
-Nmap kısayol versiyonu
-platformlar : LİNUX
-DİPNOT:nmap ta port taraması yaparken zorlamamak için geliştirilmiştir. program geliştirme aşamasındadır...                                                 Hazırlayan:xxxurfali
+Tool indirme kurma ve kullanım 
+Bu program sayesinde hiçbir  tool bilmenize gerek yok.
+Platformlar : LİNUX
+DİPNOT:nmap vb..de port taraması yaparken zorlamamak için geliştirilmiştir. program geliştirme aşamasındadır...                                                 Hazırlayan:xxxurfali
 
 DİSCLAİMER:If you do not fully understand something on this , then GO OUT OF HERE! Refer to the laws in your province/country before accessing, using, or in any other way utilizing these materials.
 
