@@ -140,7 +140,7 @@ elif(islem == "4"):
 elif(islem == "5"):
         os.system("clear")
         os.system("figlet Seytan Ayrintida.. ;) ")
-        hedefip == raw_input("Hedef İp Girin:")
+        hedefip = raw_input("Hedef İp Girin:")
         os.system("nmap -vvv -T1 -p- " + hedefip) 
 elif(islem =="7"):
         os.system("clear")
